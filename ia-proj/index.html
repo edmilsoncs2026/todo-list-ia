@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Architecture To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="todo-container">
+        <h1>Gestão de Tarefas</h1>
+
+        <div class="input-group">
+            <input type="text" placeholder="Descrição da tarefa..." class="task-input">
+            <select class="priority-select">
+                <option value="high">Prioridade Alta</option>
+                <option value="med">Prioridade Média</option>
+                <option value="low">Prioridade Baixa</option>
+            </select>
+            <button class="add-btn">Adicionar Tarefa</button>
+        </div>
+
+        <ul class="task-list">
+            
+            <li class="task-item p-high">
+                <input type="checkbox" id="t1">
+                <label for="t1" class="task-card">
+                    <span class="task-text">Revisar Arquitetura de Microserviços</span>
+                    <span class="priority-tag">Alta</span>
+                </label>
+            </li>
+
+            <li class="task-item p-med">
+                <input type="checkbox" id="t2">
+                <label for="t2" class="task-card">
+                    <span class="task-text">Documentar Endpoints da API</span>
+                    <span class="priority-tag">Média</span>
+                </label>
+            </li>
+
+            <li class="task-item p-low">
+                <input type="checkbox" id="t3">
+                <label for="t3" class="task-card">
+                    <span class="task-text">Otimizar Assets de Frontend</span>
+                    <span class="priority-tag">Baixa</span>
+                </label>
+            </li>
+
+        </ul>
+    </main>
+
+</body>
+</html>
